@@ -25,7 +25,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
-    width: 75%;
+    width: 80%;
 }
 
 .nav-left {
@@ -49,9 +49,6 @@ nav {
     color: white;
 }
 
-.nav-right {
-}
-
 .nav-right button {
     color: white;
     background-color: #40bcef;
@@ -63,14 +60,16 @@ nav {
 }
 
 .hero-sec-main {
-    width: 75%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
 
 .hero-sec-left {
+    width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -78,41 +77,47 @@ nav {
     text-transform: capitalize;
     font-size: 45px;
     font-weight: 600;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     color: white;
 }
 
 .hero-sec-left p {
+    width: 80%;
     font-size: 14px;
     font-weight: 400;
     color: white;
 }
 
 .hero-sec-right {
+    width: 50%;
 }
 
 .hero-sec-right img {
-    width: 600px;
+    width: 500px;
+    max-width: 100%;
 }
 
 
 /* ------ Service Section --------- */
 
 .service-section {
-    width: 75%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     margin: 50px auto;
 }
 
 .service-sec-left {
+    width: 50%;
 }
 
 .service-sec-left img {
-    width: 600px;
+    width: 500px;
+    max-width: 100%;
 }
 
 .service-sec-right {
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -124,16 +129,15 @@ nav {
     margin-top: 40px;
 }
 
-.right-bottom {
+.service-list {
+    padding: 10px;
 }
 
-.service-list {
-    padding: 20px;
-}
 
 .service-list p {
     font-size: 14px;
     font-weight: 400;
+    text-align: left;
     margin-left: 22px;
 }
 
@@ -149,6 +153,7 @@ nav {
 }
 
 .ufs h3 {
+    font-size: 18px;
     text-transform: capitalize;
 }
 
@@ -158,6 +163,7 @@ nav {
 .feature-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 75%;
     margin: 50px auto;
     gap: 40px;
@@ -251,4 +257,125 @@ nav {
 
 .card-active p {
     color: white;
+}
+
+
+/* Media Queries for Mobile */
+
+
+@media screen and (max-width: 1100px) {
+ 
+    /* Navbar */
+
+    nav {
+        width: 90%;
+    }
+
+    .nav-mid {
+        display: none;
+    }
+
+    .nav-left img {
+        width: 100px;
+    }
+
+    .nav-right button {
+        padding: 5px 15px;
+        font-weight: 500;
+        border-radius: 4px;
+    }
+    .hero-sec-main {
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero-sec-left {
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .hero-sec-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-sec-left h1,p {
+        text-align: center;
+    }
+
+    .hero-sec-left h1 {
+        font-size: 35px;
+    }
+
+    .hero-sec-left p {
+        width: 70%;
+    }
+
+    /* Service Section */
+
+    .service-section>* {
+        width: 100%;
+    }
+
+    .service-section {
+        flex-direction: column;
+    }
+
+    .service-sec-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-sec-right h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .right-bottom>* {
+        width: 70%;
+
+    }
+
+    .right-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Feature section */
+
+    .feature-section {
+        width: 90%;
+    }
+
+    .feature-section h1 {
+        width: 90%;
+    }
+
+    .feature-cards {
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 200px;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
